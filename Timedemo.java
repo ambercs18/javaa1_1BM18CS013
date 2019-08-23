@@ -33,7 +33,7 @@ s=x.nextInt();
 }
 void print()
 {
-System.out.print(h+":"+m+":"+s);
+System.out.println(h+":"+m+":"+s);
 }
 }
 class Timedemo
@@ -42,10 +42,11 @@ public static void main(String a[])
 {
 Scanner x=new Scanner(System.in);
 Time ob=new Time();
-while(true)
+  int ch=0;
+while(ch!=4)
 {
 System.out.println("Enter 1 to input time \n Enter 2 to advance time \n Enter 3 to display time \n Enter 4 to exit");
-int ch=x.nextInt();
+ch=x.nextInt();
 switch(ch)
 {
 case 1:
